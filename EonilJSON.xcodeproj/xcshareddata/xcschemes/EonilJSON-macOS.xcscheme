@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB9CFAC01FA01ADD006EECC5"
-               BuildableName = "libEonilJSON-macOS.a"
+               BuildableName = "libEonilJSON.a"
                BlueprintName = "EonilJSON-macOS"
                ReferencedContainer = "container:EonilJSON.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB9CFAC01FA01ADD006EECC5"
-            BuildableName = "libEonilJSON-macOS.a"
+            BuildableName = "libEonilJSON.a"
             BlueprintName = "EonilJSON-macOS"
             ReferencedContainer = "container:EonilJSON.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB9CFAC01FA01ADD006EECC5"
-            BuildableName = "libEonilJSON-macOS.a"
+            BuildableName = "libEonilJSON.a"
             BlueprintName = "EonilJSON-macOS"
             ReferencedContainer = "container:EonilJSON.xcodeproj">
          </BuildableReference>
