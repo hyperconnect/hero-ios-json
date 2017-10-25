@@ -21,6 +21,12 @@
 		451C94951D04595400C5F640 /* EonilJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451C947F1D0457F300C5F640 /* EonilJSON.framework */; };
 		4565F64C1DDF3EAD00D3AEAF /* TestAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565F64B1DDF3EAD00D3AEAF /* TestAll.swift */; };
 		4565F64D1DDF3EAD00D3AEAF /* TestAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565F64B1DDF3EAD00D3AEAF /* TestAll.swift */; };
+		FB9CFAC41FA01ADD006EECC5 /* EonilJSON_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9CFAC31FA01ADD006EECC5 /* EonilJSON_macOS.h */; };
+		FB9CFAC61FA01ADD006EECC5 /* EonilJSON_macOS.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9CFAC51FA01ADD006EECC5 /* EonilJSON_macOS.m */; };
+		FB9CFACB1FA01AED006EECC5 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C945F1D044AD200C5F640 /* JSON.swift */; };
+		FB9CFACC1FA01AED006EECC5 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C94621D044AD200C5F640 /* JSONValue.swift */; };
+		FB9CFACD1FA01AED006EECC5 /* JSONOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C94611D044AD200C5F640 /* JSONOperators.swift */; };
+		FB9CFACE1FA01AED006EECC5 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C94601D044AD200C5F640 /* JSONError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,9 @@
 		451C947F1D0457F300C5F640 /* EonilJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EonilJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		451C94901D04595400C5F640 /* EonilJSON-OSX-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EonilJSON-OSX-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4565F64B1DDF3EAD00D3AEAF /* TestAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAll.swift; sourceTree = "<group>"; };
+		FB9CFAC11FA01ADD006EECC5 /* libEonilJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEonilJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9CFAC31FA01ADD006EECC5 /* EonilJSON_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EonilJSON_macOS.h; sourceTree = "<group>"; };
+		FB9CFAC51FA01ADD006EECC5 /* EonilJSON_macOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EonilJSON_macOS.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB9CFABE1FA01ADD006EECC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +112,7 @@
 				451C94781D04555200C5F640 /* README.md */,
 				451C94561D044ABD00C5F640 /* Sources */,
 				451C946E1D0451D800C5F640 /* Tests */,
+				FB9CFAC21FA01ADD006EECC5 /* EonilJSON-macOS */,
 				451C94551D044ABD00C5F640 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +124,7 @@
 				451C946D1D0451D800C5F640 /* EonilJSON-iOS-Tests.xctest */,
 				451C947F1D0457F300C5F640 /* EonilJSON.framework */,
 				451C94901D04595400C5F640 /* EonilJSON-OSX-Tests.xctest */,
+				FB9CFAC11FA01ADD006EECC5 /* libEonilJSON.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +159,15 @@
 			path = AllTests;
 			sourceTree = "<group>";
 		};
+		FB9CFAC21FA01ADD006EECC5 /* EonilJSON-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB9CFAC31FA01ADD006EECC5 /* EonilJSON_macOS.h */,
+				FB9CFAC51FA01ADD006EECC5 /* EonilJSON_macOS.m */,
+			);
+			path = "EonilJSON-macOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -157,6 +184,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4517CF811E2B968800C43464 /* EonilJSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9CFABF1FA01ADD006EECC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9CFAC41FA01ADD006EECC5 /* EonilJSON_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +270,23 @@
 			productReference = 451C94901D04595400C5F640 /* EonilJSON-OSX-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FB9CFAC01FA01ADD006EECC5 /* EonilJSON-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9CFACA1FA01ADD006EECC5 /* Build configuration list for PBXNativeTarget "EonilJSON-macOS" */;
+			buildPhases = (
+				FB9CFABD1FA01ADD006EECC5 /* Sources */,
+				FB9CFABE1FA01ADD006EECC5 /* Frameworks */,
+				FB9CFABF1FA01ADD006EECC5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EonilJSON-macOS";
+			productName = "EonilJSON-macOS";
+			productReference = FB9CFAC11FA01ADD006EECC5 /* libEonilJSON.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +311,12 @@
 					451C948F1D04595400C5F640 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					FB9CFAC01FA01ADD006EECC5 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = 7PZ7AG6K6T;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 451C944E1D044ABD00C5F640 /* Build configuration list for PBXProject "EonilJSON" */;
@@ -278,6 +336,7 @@
 				451C946C1D0451D800C5F640 /* EonilJSON-iOS-Tests */,
 				451C947E1D0457F300C5F640 /* EonilJSON-OSX */,
 				451C948F1D04595400C5F640 /* EonilJSON-OSX-Tests */,
+				FB9CFAC01FA01ADD006EECC5 /* EonilJSON-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -352,6 +411,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB9CFABD1FA01ADD006EECC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9CFACE1FA01AED006EECC5 /* JSONError.swift in Sources */,
+				FB9CFACC1FA01AED006EECC5 /* JSONValue.swift in Sources */,
+				FB9CFAC61FA01ADD006EECC5 /* EonilJSON_macOS.m in Sources */,
+				FB9CFACB1FA01AED006EECC5 /* JSON.swift in Sources */,
+				FB9CFACD1FA01AED006EECC5 /* JSONOperators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -420,7 +491,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -472,7 +543,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -496,7 +567,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -515,7 +585,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -609,6 +678,57 @@
 			};
 			name = Release;
 		};
+		FB9CFAC71FA01ADD006EECC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PZ7AG6K6T;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FB9CFAC81FA01ADD006EECC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PZ7AG6K6T;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FB9CFAC91FA01ADD006EECC5 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PZ7AG6K6T;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+			};
+			name = QA;
+		};
 		FBA3D0551F04E771007F1BAE /* QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -654,7 +774,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -677,7 +797,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = QA;
 		};
@@ -775,6 +894,16 @@
 				451C94991D04595400C5F640 /* Debug */,
 				451C949A1D04595400C5F640 /* Release */,
 				FBA3D0591F04E771007F1BAE /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9CFACA1FA01ADD006EECC5 /* Build configuration list for PBXNativeTarget "EonilJSON-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9CFAC71FA01ADD006EECC5 /* Debug */,
+				FB9CFAC81FA01ADD006EECC5 /* Release */,
+				FB9CFAC91FA01ADD006EECC5 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
